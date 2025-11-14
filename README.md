@@ -2,7 +2,7 @@
 
 A comprehensive Python toolkit for analyzing small activating RNA (saRNA) sequences with statistical analysis, machine learning classification, and publication-ready visualizations.
 
-## 🚀 Quick Start
+##  Start
 
 ```python
 from saRNA_aligner_20251009 import saRNAAligner, run_statistical_analysis
@@ -13,7 +13,7 @@ sequences, labels = aligner.load_and_process_data()
 results = run_statistical_analysis(aligner.sequences_df)
 ```
 
-## 📋 Features
+## Features
 
 - **Statistical Analysis**: Fisher's exact tests, bootstrap confidence intervals, permutation testing
 - **Machine Learning**: Random Forest feature importance, K-means clustering, PCA visualization  
@@ -21,7 +21,7 @@ results = run_statistical_analysis(aligner.sequences_df)
 - **Professional Visualizations**: Publication-ready figures (300 DPI, PNG/PDF)
 - **Automated Reporting**: Statistical summaries with recommendations
 
-## 🔧 Installation
+## Installation
 
 ```bash
 # Clone the repository
@@ -32,7 +32,7 @@ cd saRNA-aligner
 pip install pandas numpy matplotlib seaborn scipy scikit-learn openpyxl
 ```
 
-## 📊 Input Format
+## Input Format
 
 Excel file with the following structure:
 
@@ -46,7 +46,7 @@ Excel file with the following structure:
 - Positive controls: Include "positive control" in column name
 - Sequences: Must be exactly 19 nucleotides (A, C, G, U)
 
-## 💻 Usage Examples
+## Usage Examples
 
 ### Basic Analysis
 ```python
@@ -106,7 +106,7 @@ stability_counts = aligner.count_positional_motifs(
 )
 ```
 
-## 📁 Output Structure
+## Output Structure
 
 ```
 saRNA_Aligner_Analysis_YYYYMMDD_HHMMSS/
@@ -121,7 +121,7 @@ saRNA_Aligner_Analysis_YYYYMMDD_HHMMSS/
 └── statistical_summary.txt
 ```
 
-## 📊 Analysis Pipeline
+## Analysis Pipeline
 
 1. **Data Loading**: Excel file → DataFrame with sequence validation
 2. **Statistical Testing**: Position-wise nucleotide frequency analysis
@@ -130,7 +130,7 @@ saRNA_Aligner_Analysis_YYYYMMDD_HHMMSS/
 5. **Machine Learning**: Random Forest classification and clustering
 6. **Visualization**: High-quality plots for publication
 
-## 🔬 Statistical Methods
+## Statistical Methods
 
 ### Fisher's Exact Test
 - Position-wise nucleotide frequency comparison
@@ -147,7 +147,7 @@ saRNA_Aligner_Analysis_YYYYMMDD_HHMMSS/
 - 1,000 permutations default
 - Global pattern detection
 
-## 🎨 Visualization Options
+## Visualization Options
 
 ```python
 # Customize visualization settings
@@ -162,7 +162,7 @@ aligner.colors = {
 }
 ```
 
-## 📦 Dependencies
+## Dependencies
 
 ```
 pandas>=1.3.0
